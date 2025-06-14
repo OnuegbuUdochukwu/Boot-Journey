@@ -8,7 +8,7 @@ I'll be ticking off each project as I complete them.
 
 ## ✅ Progress
 
-- [ ] 01 - Hello World REST API
+- [X] 01 - Hello World REST API
 - [ ] 02 - Basic Calculator API
 - [ ] 03 - Quote of the Day Service
 - [ ] 04 - Simple To-Do List API
