@@ -42,7 +42,7 @@ public class CalculatorController {
                     "error", "Cannot divide by zero"
             );
         }
-        double dividend = a / b;
+        double dividend = (double) a / b;
         return Map.of(
                 "operation", "division",
                 "result", dividend);
