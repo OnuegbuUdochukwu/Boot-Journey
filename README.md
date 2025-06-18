@@ -12,7 +12,7 @@ I'll be ticking off each project as I complete them.
 - [X] 02 - Basic Calculator API
 - [X] [03 - Quote of the Day API](03-quote-of-the-day-api/)
 - [X] Special Mention - [04 - Temperature Converter API](04-temperature-converter-api/)
-- [ ] 04 - Simple To-Do List API
+- [X] 04 - [Simple To-Do List API](04-simple_to-do_list_api/)
 - [ ] 05 - Contact Book API
 - [ ] 06 - Weather Information API (static data)
 - [ ] 07 - Student Management System
