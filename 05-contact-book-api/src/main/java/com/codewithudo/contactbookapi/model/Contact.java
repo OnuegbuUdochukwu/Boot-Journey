@@ -1,17 +1,14 @@
 package com.codewithudo.contactbookapi.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
 @Getter
 public class Contact {
-    private int id;
+    private Integer id;
     private String name;
     private String email;
     private String phone;

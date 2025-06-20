@@ -3,15 +3,24 @@ package com.codewithudo.contactbookapi.service;
 import com.codewithudo.contactbookapi.model.Contact;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class ContactService {
 
-    ArrayList<Contact> contacts = new ArrayList<>();
+    private final ArrayList<Contact> contacts = new ArrayList<>();
+    private int nextId = 1;
 
-    public ArrayList<Contact> getContacts() {
+    public ArrayList<Contact> addContact(Contact contact) {
+        contact.setId(nextId++);
+        contacts.add(contact);
         return contacts;
     }
+
+    public ArrayList<Contact> getAllContacts() {
+        return contacts;
+    }
+
     public Contact getContactById(int id) {
         for (Contact contact : contacts) {
             if (contact.getId() == id)
@@ -20,23 +29,21 @@ public class ContactService {
         return null;
     }
 
-    public ArrayList<Contact> addContact(Contact contact) {
-        contacts.add(contact);
-        return contacts;
+    public boolean updateContact(int id, Contact updatedContact) {
+        for (Contact contact : contacts) {
+            if (contact.getId() == id) {
+                contact.setName(updatedContact.getName());
+                contact.setAddress(updatedContact.getAddress());
+                contact.setEmail(updatedContact.getEmail());
+                contact.setPhone(updatedContact.getPhone());
+                return true;
+            }
+        }
+        return false;
     }
 
-    public ArrayList<Contact> removeContact(Contact contact) {
-        contacts.remove(contact);
-        return contacts;
-    }
-
-    public ArrayList<Contact> updateContact(int id, Contact contact) {
-        contacts.get(id).setName(contact.getName());
-        contacts.get(id).setAddress(contact.getAddress());
-        contacts.get(id).setEmail(contact.getEmail());
-        contacts.get(id).setPhone(contact.getPhone());
-        return contacts;
-
+    public boolean removeContact(int id) {
+        return contacts.removeIf(contact -> contact.getId().equals(id));
     }
 
 }
