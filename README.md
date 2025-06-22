@@ -14,7 +14,7 @@ I'll be ticking off each project as I complete them.
 - [X] Special Mention - 04 - [Temperature Converter API](04-temperature-converter-api/)
 - [X] 04 - [Simple To-Do List API](04-Simple_To-Do_List_API/)
 - [X] 05 - [Contact Book API](05-contact-book-api/)
-- [ ] 06 - [Weather Information API (static data)](06-weather-information-api)
+- [X] 06 - [Weather Information API (static data)](06-weather-information-api)
 - [ ] 07 - Student Management System
 - [ ] 08 - Book Inventory API
 - [ ] 09 - Basic Notes App API
