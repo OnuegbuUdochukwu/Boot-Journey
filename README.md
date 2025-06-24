@@ -11,7 +11,7 @@ I'll be ticking off each project as I complete them.
 - [X] 01 - [Hello World REST API](01-hello-world-rest-api/)
 - [X] 02 - Basic Calculator API
 - [X] 03 - [Quote of the Day API](03-quote-of-the-day-api/)
-- [X] Special Mention - 04 - [Temperature Converter API](04-temperature-converter-api/)
+- [X] 04 - [Temperature Converter API](04-temperature-converter-api/) - Special Mention
 - [X] 04 - [Simple To-Do List API](04-Simple_To-Do_List_API/)
 - [X] 05 - [Contact Book API](05-contact-book-api/)
 - [X] 06 - [Weather Information API (static data)](06-weather-information-api)
