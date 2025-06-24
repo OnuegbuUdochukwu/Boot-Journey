@@ -11,10 +11,10 @@ public class StudentService {
     private final ArrayList<Student> students = new ArrayList<>();
     private int nextId = 1;
 
-    public void addStudent(Student student) {
+    public ArrayList<Student> addStudent(Student student) {
         student.setId(nextId++);;
         students.add(student);
-
+        return students;
     }
 
     public ArrayList<Student> getAllStudent() {
@@ -23,7 +23,7 @@ public class StudentService {
 
     public Student getStudentById(int id) {
         for (Student student : students) {
-            if (student.getId().equals(id)) {
+            if (student.getId() == (id)) {
                 return student;
             }
         }
@@ -41,7 +41,7 @@ public class StudentService {
 
     public boolean updateStudent(int id, Student student) {
         for (Student student1 : students) {
-            if (student1.getId().equals(id)) {
+            if (student1.getId() == (id)) {
                 student1.setName(student.getName());
                 student1.setAge(student.getAge());
                 student1.setCourse(student.getCourse());
@@ -53,7 +53,7 @@ public class StudentService {
     }
 
     public boolean removeStudent(int id) {
-        return students.removeIf(student -> student.getId().equals(id));
+        return students.removeIf(student -> student.getId() == (id));
     }
 
 }
