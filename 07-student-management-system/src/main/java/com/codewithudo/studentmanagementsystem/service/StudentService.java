@@ -17,7 +17,7 @@ public class StudentService {
         return students;
     }
 
-    public ArrayList<Student> getAllStudent() {
+    public ArrayList<Student> getAllStudents() {
         return students;
     }
 
