@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5485a9df-6903-422e-a228-3dd102796f0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codewithudo/bookinventoryapi/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codewithudo/bookinventoryapi/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codewithudo/bookinventoryapi/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codewithudo/bookinventoryapi/service/BookService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +100,7 @@
       <updated>1750793319930</updated>
       <workItem from="1750793321205" duration="942000" />
       <workItem from="1750864352371" duration="1572000" />
-      <workItem from="1750935410224" duration="384000" />
+      <workItem from="1750935410224" duration="719000" />
     </task>
     <servers />
   </component>
