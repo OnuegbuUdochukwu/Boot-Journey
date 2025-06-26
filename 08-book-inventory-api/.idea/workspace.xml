@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5485a9df-6903-422e-a228-3dd102796f0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codewithudo/bookinventoryapi/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +107,7 @@
       <workItem from="1750864352371" duration="1572000" />
       <workItem from="1750935410224" duration="882000" />
       <workItem from="1750963917928" duration="962000" />
-      <workItem from="1750964903100" duration="324000" />
+      <workItem from="1750964903100" duration="727000" />
     </task>
     <servers />
   </component>
