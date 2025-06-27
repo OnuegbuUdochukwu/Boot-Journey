@@ -26,6 +26,9 @@ public class WeatherController {
     @GetMapping("/{city}")
     public ResponseEntity<WeatherData> getWeatherData(@PathVariable String city){
         WeatherData weatherData = weatherService.getWeatherData(city);
+        if (weatherData == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
         return new ResponseEntity<>(weatherData, HttpStatus.OK);
     }
 }
