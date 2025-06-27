@@ -15,13 +15,17 @@ import java.util.ArrayList;
 @RequestMapping("/api/weather")
 public class WeatherController {
 
-    private final WeatherService weatherService  = new WeatherService();
+    private final WeatherService weatherService;
 
-    @GetMapping
-    public ResponseEntity<ArrayList<WeatherData>> getWeatherData(){
-       ArrayList<WeatherData> weatherList = weatherService.getWeatherDataList();
-        return new ResponseEntity<>(weatherList, HttpStatus.OK);
+    public WeatherController(WeatherService weatherService) {
+        this.weatherService = weatherService;
     }
+
+//    @GetMapping
+//    public ResponseEntity<ArrayList<WeatherData>> getWeatherData(){
+//       ArrayList<WeatherData> weatherList = weatherService.getWeatherDataList();
+//        return new ResponseEntity<>(weatherList, HttpStatus.OK);
+//    }
 
     @GetMapping("/{city}")
     public ResponseEntity<WeatherData> getWeatherData(@PathVariable String city){

@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5485a9df-6903-422e-a228-3dd102796f0b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../06-weather-information-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06-weather-information-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06-weather-information-api/src/main/java/com/codewithudo/weatherinformationapi/model/OpenWeatherResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../06-weather-information-api/src/main/java/com/codewithudo/weatherinformationapi/model/OpenWeatherResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06-weather-information-api/src/main/java/com/codewithudo/weatherinformationapi/controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../06-weather-information-api/src/main/java/com/codewithudo/weatherinformationapi/controller/WeatherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06-weather-information-api/src/main/java/com/codewithudo/weatherinformationapi/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../06-weather-information-api/src/main/java/com/codewithudo/weatherinformationapi/service/WeatherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
