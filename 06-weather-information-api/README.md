@@ -36,7 +36,7 @@ Part of the **120 Spring Boot Projects** challenge.
 
 ## 📬 Sample JSON Response
 
-**For `/api/weather`**
+**For `/api/weather/Lagos`**
 
 ```json
 [
@@ -44,10 +44,5 @@ Part of the **120 Spring Boot Projects** challenge.
     "city": "Lagos",
     "temperature": 31.5,
     "description": "Sunny"
-  },
-  {
-    "city": "Abuja",
-    "temperature": 29.0,
-    "description": "Cloudy"
   }
 ]
