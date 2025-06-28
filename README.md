@@ -16,7 +16,7 @@ I'll be ticking off each project as I complete them.
 - [X] 05 - [Contact Book API](05-contact-book-api/)
 - [X] 06 - [Weather Information API (static data)](06-weather-information-api)
 - [X] 07 - [Student Management System](07-student-management-system)
-- [ ] 08 - Book Inventory API
+- [X] 08 - [Book Inventory API](08-book-inventory-api)
 - [ ] 09 - Basic Notes App API
 - [ ] 10 - URL Shortener (without database)
 - [ ] 11 - Static Product Catalog API
