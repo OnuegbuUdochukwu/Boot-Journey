@@ -12,7 +12,7 @@ Part of the **120 Spring Boot Projects** challenge.
 
 ## 📖 Features
 
-- Retrieve all available weather data
+[//]: # (- Retrieve all available weather data)
 - Retrieve weather data for a specific city (case-insensitive)
 
 ---
@@ -30,7 +30,6 @@ Part of the **120 Spring Boot Projects** challenge.
 
 | Method | Endpoint               | Description                              |
 |:--------|:-------------------------|:------------------------------------------|
-| `GET`    | `/api/weather`             | Get all available weather data            |
 | `GET`    | `/api/weather/{city}`      | Get weather data for a specific city      |
 
 ---
