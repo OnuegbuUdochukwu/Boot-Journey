@@ -9,11 +9,11 @@ import java.util.ArrayList;
 public class NoteService {
 
     private ArrayList<Note> notes = new ArrayList<>();
-    private int numberOfNotes = 1;
+    private int nextId = 1;
 
 //    public NoteService(ArrayList<Note> notes) {
 //        this.notes = notes;
-//        this.numberOfNotes = notes.size();
+//        this.nextId = notes.size();
 //    }
 
     public ArrayList<Note> getAllNotes(){
@@ -31,15 +31,15 @@ public class NoteService {
 
     public boolean addNote(Note note) {
         notes.add(note);
-        note.setId(numberOfNotes++);
+        note.setId(nextId++);
         return true;
     }
 
     public boolean updateNote(int id, Note note) {
         for(Note n : notes) {
             if(n.getId() == id){
-                note.setTitle(note.getTitle());
-                note.setContent(note.getContent());
+                n.setTitle(note.getTitle());
+                n.setContent(note.getContent());
                 return true;
             }
         }
@@ -47,7 +47,7 @@ public class NoteService {
     }
 
     public boolean removeNote(Note note) {
-        numberOfNotes--;
+        nextId--;
         return notes.remove(note);
     }
 }
