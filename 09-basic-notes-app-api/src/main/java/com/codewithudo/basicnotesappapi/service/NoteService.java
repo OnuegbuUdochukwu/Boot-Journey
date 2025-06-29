@@ -46,8 +46,7 @@ public class NoteService {
         return false;
     }
 
-    public boolean removeNote(Note note) {
-        nextId--;
-        return notes.remove(note);
+    public boolean deleteNoteById(int id) {
+        return notes.removeIf(note -> note.getId() == id);
     }
 }
