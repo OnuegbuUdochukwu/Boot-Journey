@@ -30,8 +30,9 @@ public class NoteService {
     }
 
     public boolean addNote(Note note) {
-        numberOfNotes++;
-        return notes.add(note);
+        notes.add(note);
+        note.setId(numberOfNotes++);
+        return true;
     }
 
     public boolean updateNote(int id, Note note) {
