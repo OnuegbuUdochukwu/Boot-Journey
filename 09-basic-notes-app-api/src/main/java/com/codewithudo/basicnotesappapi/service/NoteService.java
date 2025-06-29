@@ -21,7 +21,12 @@ public class NoteService {
     }
 
     public Note getNoteById(int id){
-        return notes.get(id);
+        for (Note note : notes) {
+            if (note.getId() == id) {
+                return note;
+            }
+        }
+        return null;
     }
 
     public boolean addNote(Note note) {
