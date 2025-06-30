@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5485a9df-6903-422e-a228-3dd102796f0b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../09-basic-notes-app-api/src/main/java/com/codewithudo/basicnotesappapi/service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../09-basic-notes-app-api/src/main/java/com/codewithudo/basicnotesappapi/service/NoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../09-basic-notes-app-api/src/main/java/com/codewithudo/basicnotesappapi/controller/NoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-basic-notes-app-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-basic-notes-app-api/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +113,8 @@
       <workItem from="1751027353954" duration="402000" />
       <workItem from="1751129747873" duration="347000" />
       <workItem from="1751143247878" duration="512000" />
-      <workItem from="1751223767521" duration="1167000" />
+      <workItem from="1751223767521" duration="1618000" />
+      <workItem from="1751322042271" duration="418000" />
     </task>
     <servers />
   </component>
