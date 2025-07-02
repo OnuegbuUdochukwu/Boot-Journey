@@ -18,7 +18,7 @@ I'll be ticking off each project as I complete them.
 - [X] 07 - [Student Management System](07-student-management-system)
 - [X] 08 - [Book Inventory API](08-book-inventory-api)
 - [X] 09 - [Basic Notes App API](09-basic-notes-app-api)
-- [ ] 10 - URL Shortener (without database)
+- [X] 10 - [URL Shortener (without database)](10-url-shortener-api)
 - [ ] 11 - Static Product Catalog API
 - [ ] 12 - Basic Expense Tracker
 - [ ] 13 - Simple Polling App
