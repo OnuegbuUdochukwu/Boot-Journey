@@ -12,5 +12,14 @@ public class ProductService {
     private final ArrayList<Product> products = new ArrayList<>();
     int nextId = 1;
 
+    public ArrayList<Product> getAllProducts() {
+        return products;
+    }
 
+    public Product getProductById(int id) {
+        return products.stream()
+                .filter(p -> p.getId() == id)
+                .findFirst()
+                .orElse(null);
+    }
 }
