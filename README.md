@@ -19,7 +19,7 @@ I'll be ticking off each project as I complete them.
 - [X] 08 - [Book Inventory API](08-book-inventory-api)
 - [X] 09 - [Basic Notes App API](09-basic-notes-app-api)
 - [X] 10 - [URL Shortener (without database)](10-url-shortener-api)
-- [X] 11 - Static Product Catalog API
+- [X] 11 - [Static Product Catalog API](11-static-product-catalog-api)
 - [ ] 12 - Basic Expense Tracker
 - [ ] 13 - Simple Polling App
 - [ ] 14 - Task Reminder API
