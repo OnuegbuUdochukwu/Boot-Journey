@@ -20,7 +20,7 @@ I'll be ticking off each project as I complete them.
 - [X] 09 - [Basic Notes App API](09-basic-notes-app-api)
 - [X] 10 - [URL Shortener (without database)](10-url-shortener-api)
 - [X] 11 - [Static Product Catalog API](11-static-product-catalog-api)
-- [ ] 12 - Basic Expense Tracker
+- [X] 12 - [Basic Expense Tracker](12-basic-expense-tracker-api)
 - [ ] 13 - Simple Polling App
 - [ ] 14 - Task Reminder API
 - [ ] 15 - Employee Directory API
