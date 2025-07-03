@@ -13,6 +13,9 @@ public class ExpenseService {
 
     public boolean addExpense(Expense expense) {
         expenses.add(expense);
+        if (expense.getTitle() == null) {
+            return false;
+        }
         expense.setId(nextId++);
         return true;
     }
