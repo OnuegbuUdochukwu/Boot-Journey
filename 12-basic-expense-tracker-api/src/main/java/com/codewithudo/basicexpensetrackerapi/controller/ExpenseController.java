@@ -33,7 +33,7 @@ public class ExpenseController {
     }
 
     @PostMapping
-    public ResponseEntity<String> createExpense(@RequestBody Expense expense) {
+    public ResponseEntity<String> addExpense(@RequestBody Expense expense) {
         boolean added = expenseService.addExpense(expense);
         if (added) {
             return new ResponseEntity<>("Expense added successfully", HttpStatus.OK);
