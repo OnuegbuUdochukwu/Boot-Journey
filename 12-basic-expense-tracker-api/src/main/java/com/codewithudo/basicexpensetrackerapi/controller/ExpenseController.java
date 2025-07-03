@@ -24,9 +24,12 @@ public class ExpenseController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Expense> getExpenseById(@PathVariable Integer id) {
-        Expense expense = expenseService.getExpenseById(id);
-        return new ResponseEntity<>(expense, HttpStatus.OK);
+    public ResponseEntity<Expense> getExpenseById(@PathVariable int id) {
+        Expense foundExpense = expenseService.getExpenseById(id);
+        if (foundExpense != null) {
+            return new ResponseEntity<>(foundExpense, HttpStatus.OK);
+        }
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
     @PostMapping
