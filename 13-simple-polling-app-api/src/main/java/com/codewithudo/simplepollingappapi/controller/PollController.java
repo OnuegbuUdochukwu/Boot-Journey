@@ -35,8 +35,23 @@ public class PollController {
         }
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
-    @PostMapping("/{id}/votes")
-    public void vote(@PathVariable int id) {
 
+    @PostMapping("/{id}/vote/{optionId}")
+    public ResponseEntity<String> vote(@PathVariable int pollId, @PathVariable int optionId) {
+        boolean voted = pollService.vote(pollId, optionId);
+        if (voted) {
+            return new ResponseEntity<>("Vote recorded successfully.", HttpStatus.OK);
+        }
+        return new ResponseEntity<>("Poll or option not found.", HttpStatus.NOT_FOUND);
+    }
+
+    // Delete a poll by ID
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> deletePoll(@PathVariable int id) {
+        boolean deleted = pollService.deletePollById(id);
+        if (deleted) {
+            return new ResponseEntity<>("Poll deleted successfully.", HttpStatus.OK);
+        }
+        return new ResponseEntity<>("Poll not found.", HttpStatus.NOT_FOUND);
     }
 }
