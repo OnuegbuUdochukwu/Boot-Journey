@@ -13,20 +13,8 @@ public class PollService {
     private int nextPollId = 1;
     private int nextOptionId = 1;
 
-    public List<Poll> getAllPolls() {
-        return polls;
-    }
-
-    public Poll getPollById(int id) {
-        for (Poll poll : polls) {
-            if (poll.getId() == id) {
-                return poll;
-            }
-        }
-        return null;
-    }
-
-    public Poll createPoll(Poll poll) {
+    // Add a new poll
+    public Poll addPoll(Poll poll) {
         poll.setId(nextPollId++);
         for (Option option : poll.getOptions()) {
             option.setId(nextOptionId++);
@@ -36,6 +24,23 @@ public class PollService {
         return poll;
     }
 
+    // Get all polls
+    public List<Poll> getAllPolls() {
+        return polls;
+    }
+
+    // Get a poll by ID
+    public Poll getPollById(int id) {
+        for (Poll poll : polls) {
+            if (poll.getId() == id) {
+                return poll;
+            }
+        }
+        return null;
+    }
+
+
+    // Vote for an option by poll ID and option ID
     public boolean vote(int pollId, int optionId) {
         Poll poll = getPollById(pollId);
         if (poll != null) {
@@ -47,5 +52,10 @@ public class PollService {
             }
         }
         return false;
+    }
+
+    // Delete a poll
+    public boolean deletePollById(int id) {
+        return polls.removeIf(poll -> poll.getId() == id);
     }
 }
