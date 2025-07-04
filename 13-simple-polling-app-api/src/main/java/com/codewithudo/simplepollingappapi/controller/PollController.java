@@ -37,8 +37,8 @@ public class PollController {
     }
 
     @PostMapping("/{id}/vote/{optionId}")
-    public ResponseEntity<String> vote(@PathVariable int pollId, @PathVariable int optionId) {
-        boolean voted = pollService.vote(pollId, optionId);
+    public ResponseEntity<String> vote(@PathVariable int id, @PathVariable int optionId) {
+        boolean voted = pollService.vote(id, optionId);
         if (voted) {
             return new ResponseEntity<>("Vote recorded successfully.", HttpStatus.OK);
         }
