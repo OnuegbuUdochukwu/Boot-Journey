@@ -22,7 +22,7 @@ I'll be ticking off each project as I complete them.
 - [X] 11 - [Static Product Catalog API](11-static-product-catalog-api)
 - [X] 12 - [Basic Expense Tracker](12-basic-expense-tracker-api)
 - [X] 13 - [Simple Polling App](13-simple-polling-app-api)
-- [ ] 14 - Task Reminder API
+- [X] 14 - [Task Reminder API](14-task-reminder-api)
 - [ ] 15 - Employee Directory API
 - [ ] 16 - Country Information API
 - [ ] 17 - Event Management System (basic)
