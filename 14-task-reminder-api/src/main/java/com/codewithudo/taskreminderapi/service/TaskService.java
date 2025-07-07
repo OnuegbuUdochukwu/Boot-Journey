@@ -44,12 +44,6 @@ public class TaskService {
     }
 
     public boolean deleteTask(int id) {
-        for (Task task : tasks) {
-            if (task.getId().equals(id)) {
-                tasks.remove(task);
-                return true;
-            }
-        }
-        return false;
+        return tasks.removeIf(task -> task.getId().equals(id));
     }
 }
