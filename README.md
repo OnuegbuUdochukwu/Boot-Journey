@@ -21,7 +21,7 @@ I'll be ticking off each project as I complete them.
 - [X] 10 - [URL Shortener (without database)](10-url-shortener-api)
 - [X] 11 - [Static Product Catalog API](11-static-product-catalog-api)
 - [X] 12 - [Basic Expense Tracker](12-basic-expense-tracker-api)
-- [ ] 13 - Simple Polling App
+- [X] 13 - [Simple Polling App](13-simple-polling-app-api)
 - [ ] 14 - Task Reminder API
 - [ ] 15 - Employee Directory API
 - [ ] 16 - Country Information API
