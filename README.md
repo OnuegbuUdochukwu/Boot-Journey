@@ -23,7 +23,7 @@ I'll be ticking off each project as I complete them.
 - [X] 12 - [Basic Expense Tracker](12-basic-expense-tracker-api)
 - [X] 13 - [Simple Polling App](13-simple-polling-app-api)
 - [X] 14 - [Task Reminder API](14-task-reminder-api)
-- [ ] 15 - Employee Directory API
+- [X] 15 - [Employee Directory API](15-employee-directory-api)
 - [ ] 16 - Country Information API
 - [ ] 17 - Event Management System (basic)
 - [ ] 18 - Music Album Manager
