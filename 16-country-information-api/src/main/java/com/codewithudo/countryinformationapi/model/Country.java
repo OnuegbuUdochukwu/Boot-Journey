@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Country {
-    private Integer id;
+//    private Integer id;
     private String name;
     private String capital;
     private String region;
