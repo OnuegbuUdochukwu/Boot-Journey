@@ -14,4 +14,5 @@ public class Country {
     private String region;
     private Long population;
     private String currency;
+    private String language;
 }
