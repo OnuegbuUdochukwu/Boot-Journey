@@ -9,13 +9,16 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class CountryService {
 
+    @Value("{api.ninjas.base-url}")
+    private String baseUrl;
+
     @Value("${api.ninjas.key}")
     private String apiKey;
 
     private final RestTemplate restTemplate = new RestTemplate();
 
     public String getCountryInfo(String country) {
-        String url = "https://api.api-ninjas.com/v1/country?name=" + country;
+        String url = baseUrl + "?name=" + country;
 
         HttpHeaders headers = new HttpHeaders();
         headers.set("X-Api-Key", apiKey);
