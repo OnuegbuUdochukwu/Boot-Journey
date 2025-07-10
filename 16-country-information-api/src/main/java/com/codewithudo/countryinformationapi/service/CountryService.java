@@ -9,10 +9,10 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class CountryService {
 
-    @Value("{api.ninjas.base-url}")
+    @Value("${api.ninjas.base-url}")
     private String baseUrl;
 
-    @Value("${api.ninjas.key}")
+    @Value("${api.ninjas.api-key}")
     private String apiKey;
 
     private final RestTemplate restTemplate = new RestTemplate();
