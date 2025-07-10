@@ -1,66 +1,39 @@
 package com.codewithudo.countryinformationapi.service;
 
 import com.codewithudo.countryinformationapi.model.Country;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.*;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.List;
+import org.springframework.web.client.RestTemplate;
 
 @Service
 public class CountryService {
 
-    private final List<Country> countries = new ArrayList<>();
-    private int nextId = 1;
+    @Value("${api.ninjas.key}")
+    private String apiKey;
 
-    // Add a new country  || Not Needed Any More
-//    public boolean addCountry(Country country) {
-//        country.setId(nextId++);
-//        countries.add(country);
-//        return true;
-//    }
+    private final RestTemplate restTemplate = new RestTemplate();
 
-    // Get all countries || Not Needed Any More
-//    public List<Country> getAllCountries() {
-//        return countries;
-//    }
+    public String getCountryInfo(String country) {
+        String url = "https://api.api-ninjas.com/v1/country?name=" + country;
 
-//    // Get a country by ID || Will be fixed Soon
-//    public Country getCountryById(int id) {
-//        for (Country country : countries) {
-//            if (country.getId().equals(id)) {
-//                return country;
-//            }
-//        }
-//        return null;
-//    }
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("X-Api-Key", apiKey);
 
-    // Get a country by Name || Not Needed Any More
-//    public Country getCountryByName(String name) {
-//        for (Country country : countries) {
-//            if (country.getName().equals(name)) {
-//                return country;
-//            }
-//        }
-//        return null;
-//    }
+        HttpEntity<Void> requestEntity = new HttpEntity<>(headers);
 
-    // Update a country by ID || Not Needed Any More
-//    public boolean updateCountry(int id, Country updatedCountry) {
-//        for (Country country : countries) {
-//            if (country.getId().equals(id)) {
-//                country.setName(updatedCountry.getName());
-//                country.setCapital(updatedCountry.getCapital());
-//                country.setRegion(updatedCountry.getRegion());
-//                country.setPopulation(updatedCountry.getPopulation());
-//                country.setCurrency(updatedCountry.getCurrency());
-//                return true;
-//            }
-//        }
-//        return false;
-//    }
+        ResponseEntity<String> response = restTemplate.exchange(
+                url,
+                HttpMethod.GET,
+                requestEntity,
+                String.class
+        );
 
-//    // Delete a country by ID || Not Needed Any More
-//    public boolean deleteCountry(int id) {
-//        return countries.removeIf(country -> country.getId().equals(id));
-//    }
+        if (response.getStatusCode() == HttpStatus.OK) {
+            return response.getBody();
+        } else {
+            return "Could not retrieve data";
+        }
+    }
+
 }
