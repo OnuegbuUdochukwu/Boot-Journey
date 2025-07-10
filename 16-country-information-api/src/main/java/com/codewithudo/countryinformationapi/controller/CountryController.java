@@ -16,49 +16,14 @@ public class CountryController {
     @Autowired
     private CountryService countryService;
 
-    // Add a new country
-    @PostMapping
-    public ResponseEntity<String> addCountry(@RequestBody Country country) {
-        boolean added = countryService.addCountry(country);
-        if (added) {
-            return new ResponseEntity<>("Country added successfully", HttpStatus.CREATED);
+    // Get a country Info by Name
+    @GetMapping("/{country}")
+    public ResponseEntity<String> getCountryInfoByName(@PathVariable String country) {
+        String result = countryService.getCountryInfo(country);
+        if (result.equals("Could not retrieve data")) {
+            return new ResponseEntity<>("Country information not found or API error.", HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<>("Failed to add country", HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
-    // Get all countries
-    @GetMapping
-    public ResponseEntity<List<Country>> getAllCountries() {
-        return new ResponseEntity<>(countryService.getAllCountries(), HttpStatus.OK);
-    }
-
-    // Get a country by ID
-    @GetMapping("/{id}")
-    public ResponseEntity<Country> getCountryById(@PathVariable int id) {
-        Country country = countryService.getCountryById(id);
-        if (country != null) {
-            return new ResponseEntity<>(country, HttpStatus.OK);
-        }
-        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-    }
-
-    // Update a country by ID
-    @PutMapping("/{id}")
-    public ResponseEntity<String> updateCountry(@PathVariable int id, @RequestBody Country country) {
-        boolean updated = countryService.updateCountry(id, country);
-        if (updated) {
-            return new ResponseEntity<>("Country updated successfully", HttpStatus.OK);
-        }
-        return new ResponseEntity<>("Country not found", HttpStatus.NOT_FOUND);
-    }
-
-    // Delete a country by ID
-    @DeleteMapping("/{id}")
-    public ResponseEntity<String> deleteCountry(@PathVariable int id) {
-        boolean deleted = countryService.deleteCountry(id);
-        if (deleted) {
-            return new ResponseEntity<>("Country deleted successfully", HttpStatus.OK);
-        }
-        return new ResponseEntity<>("Country not found", HttpStatus.NOT_FOUND);
-    }
 }
