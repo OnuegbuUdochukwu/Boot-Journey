@@ -24,7 +24,7 @@ I'll be ticking off each project as I complete them.
 - [X] 13 - [Simple Polling App](13-simple-polling-app-api)
 - [X] 14 - [Task Reminder API](14-task-reminder-api)
 - [X] 15 - [Employee Directory API](15-employee-directory-api)
-- [ ] 16 - Country Information API
+- [X] 16 - [Country Information API (Integrated API Ninja)](16-country-information-api)
 - [ ] 17 - Event Management System (basic)
 - [ ] 18 - Music Album Manager
 - [ ] 19 - Personal Diary API
