@@ -25,7 +25,7 @@ I'll be ticking off each project as I complete them.
 - [X] 14 - [Task Reminder API](14-task-reminder-api)
 - [X] 15 - [Employee Directory API](15-employee-directory-api)
 - [X] 16 - [Country Information API (Integrated API Ninja)](16-country-information-api)
-- [ ] 17 - Event Management System (basic)
+- [X] 17 - [Event Management System (basic)](17-event-management-api)
 - [ ] 18 - Music Album Manager
 - [ ] 19 - Personal Diary API
 - [ ] 20 - Vehicle Registry API
