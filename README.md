@@ -28,7 +28,7 @@ I'll be ticking off each project as I complete them.
 - [X] 17 - [Event Management System (basic)](17-event-management-api)
 - [X] 18 - [Music Album Manager](18-music-album-manager)
 - [X] 19 - [Personal Diary API](19-personal-diary-api)
-- [ ] 20 - Vehicle Registry API
+- [X] 20 - [Vehicle Registry API](20-vehicle-registry-api)
 - [ ] 21 - Recipe Management API
 - [ ] 22 - Movie Library API
 - [ ] 23 - Attendance Tracker (basic CRUD)
