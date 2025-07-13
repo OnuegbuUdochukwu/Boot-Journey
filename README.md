@@ -26,7 +26,7 @@ I'll be ticking off each project as I complete them.
 - [X] 15 - [Employee Directory API](15-employee-directory-api)
 - [X] 16 - [Country Information API (Integrated API Ninja)](16-country-information-api)
 - [X] 17 - [Event Management System (basic)](17-event-management-api)
-- [ ] 18 - Music Album Manager
+- [X] 18 - [Music Album Manager](18-music-album-manager)
 - [ ] 19 - Personal Diary API
 - [ ] 20 - Vehicle Registry API
 - [ ] 21 - Recipe Management API
