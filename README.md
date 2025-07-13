@@ -27,7 +27,7 @@ I'll be ticking off each project as I complete them.
 - [X] 16 - [Country Information API (Integrated API Ninja)](16-country-information-api)
 - [X] 17 - [Event Management System (basic)](17-event-management-api)
 - [X] 18 - [Music Album Manager](18-music-album-manager)
-- [ ] 19 - Personal Diary API
+- [X] 19 - [Personal Diary API](19-personal-diary-api)
 - [ ] 20 - Vehicle Registry API
 - [ ] 21 - Recipe Management API
 - [ ] 22 - Movie Library API
