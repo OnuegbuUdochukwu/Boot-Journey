@@ -29,7 +29,7 @@ I'll be ticking off each project as I complete them.
 - [X] 18 - [Music Album Manager](18-music-album-manager)
 - [X] 19 - [Personal Diary API](19-personal-diary-api)
 - [X] 20 - [Vehicle Registry API](20-vehicle-registry-api)
-- [ ] 21 - Recipe Management API
+- [X] 21 - [Recipe Management API](21-recipe-management-api)
 - [ ] 22 - Movie Library API
 - [ ] 23 - Attendance Tracker (basic CRUD)
 - [ ] 24 - Static FAQ Service
