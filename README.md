@@ -30,7 +30,7 @@ I'll be ticking off each project as I complete them.
 - [X] 19 - [Personal Diary API](19-personal-diary-api)
 - [X] 20 - [Vehicle Registry API](20-vehicle-registry-api)
 - [X] 21 - [Recipe Management API](21-recipe-management-api)
-- [ ] 22 - Movie Library API
+- [X] 22 - [Movie Library API](22-movie-library-api)
 - [ ] 23 - Attendance Tracker (basic CRUD)
 - [ ] 24 - Static FAQ Service
 - [ ] 25 - Currency Converter API (static rates)
