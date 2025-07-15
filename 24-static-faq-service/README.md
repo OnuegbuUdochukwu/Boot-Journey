@@ -89,8 +89,8 @@ Endpoints:
 
 Unit tests written with JUnit 5 for:
 
-- FaqService methods
-- FaqController using MockMvc
+- FaqService methods **(Not added)**
+- FaqController using MockMvc **(Not added)**
 
 ## Status
 
