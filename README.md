@@ -31,7 +31,7 @@ I'll be ticking off each project as I complete them.
 - [X] 20 - [Vehicle Registry API](20-vehicle-registry-api)
 - [X] 21 - [Recipe Management API](21-recipe-management-api)
 - [X] 22 - [Movie Library API](22-movie-library-api)
-- [ ] 23 - Attendance Tracker (basic CRUD)
+- [X] 23 - [Attendance Tracker (basic CRUD)](23-attendance-tracker-api)
 - [ ] 24 - Static FAQ Service
 - [ ] 25 - Currency Converter API (static rates)
 - [ ] 26 - Inventory Management API (local)
