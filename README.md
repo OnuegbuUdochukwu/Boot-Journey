@@ -33,7 +33,7 @@ I'll be ticking off each project as I complete them.
 - [X] 22 - [Movie Library API](22-movie-library-api)
 - [X] 23 - [Attendance Tracker (basic CRUD)](23-attendance-tracker-api)
 - [X] 24 - [Static FAQ Service](24-static-faq-service)
-- [ ] 25 - Currency Converter API (static rates)
+- [X] 25 - [Currency Converter API (static rates)](25-currency-converter-api)
 - [ ] 26 - Inventory Management API (local)
 - [ ] 27 - Online Quiz API (single-player)
 - [ ] 28 - Timezone Conversion API
