@@ -34,7 +34,7 @@ I'll be ticking off each project as I complete them.
 - [X] 23 - [Attendance Tracker (basic CRUD)](23-attendance-tracker-api)
 - [X] 24 - [Static FAQ Service](24-static-faq-service)
 - [X] 25 - [Currency Converter API (static rates)](25-currency-converter-api)
-- [ ] 26 - Inventory Management API (local)
+- [X] 26 - [Inventory Management API (local)](26-inventory-management-api)
 - [ ] 27 - Online Quiz API (single-player)
 - [ ] 28 - Timezone Conversion API
 - [ ] 29 - System Health Check API
