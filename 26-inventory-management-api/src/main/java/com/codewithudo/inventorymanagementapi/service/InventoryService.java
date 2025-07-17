@@ -8,39 +8,36 @@ import java.util.*;
 @Service
 public class InventoryService {
 
-    private final Map<Integer, InventoryItem> inventory = new HashMap<>();
+    private final List<InventoryItem> items = new ArrayList<>();
     private int currentId = 1;
 
-    // Add new item
     public InventoryItem addItem(InventoryItem item) {
         item.setId(currentId++);
-        inventory.put(item.getId(), item);
+        items.add(item);
         return item;
     }
 
-    // Get all items
     public List<InventoryItem> getAllItems() {
-        return new ArrayList<>(inventory.values());
+        return items;
     }
 
-    // Get item by ID
     public Optional<InventoryItem> getItemById(int id) {
-        return Optional.ofNullable(inventory.get(id));
+        return items.stream().filter(i -> i.getId() == id).findFirst();
     }
 
-    // Update item by ID
     public Optional<InventoryItem> updateItem(int id, InventoryItem updatedItem) {
-        if (inventory.containsKey(id)) {
-            updatedItem.setId(id);
-            inventory.put(id, updatedItem);
-            return Optional.of(updatedItem);
-        } else {
-            return Optional.empty();
+        Optional<InventoryItem> existingItemOpt = getItemById(id);
+        if (existingItemOpt.isPresent()) {
+            InventoryItem existingItem = existingItemOpt.get();
+            existingItem.setName(updatedItem.getName());
+            existingItem.setQuantity(updatedItem.getQuantity());
+            existingItem.setPrice(updatedItem.getPrice());
+            return Optional.of(existingItem);
         }
+        return Optional.empty();
     }
 
-    // Delete item by ID
     public boolean deleteItem(int id) {
-        return inventory.remove(id) != null;
+        return items.removeIf(i -> i.getId() == id);
     }
 }
