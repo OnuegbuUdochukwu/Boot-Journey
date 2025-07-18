@@ -48,6 +48,26 @@ public class QuizService {
         return Optional.of(new QuizResult(questions.size(), correct, score));
     }
 
+    public String getResultAnalysis(int quizId, AnswerSubmission submission){
+        List<Question> questions = getQuizById(quizId).get().getQuestions();
+        List<Integer> submitted = submission.getSelectedOptionIndices();
+
+        StringBuilder summary = new StringBuilder("Submission Summary:\n");
+
+        for (int i = 0; i < questions.size(); i++) {
+            Question q = questions.get(i);
+            int submittedIndex = submitted.get(i);
+            boolean isCorrect = Objects.equals(q.getCorrectOptionIndex(), submittedIndex);
+
+            summary.append(String.format("Q%d: \"%s\"\n", i + 1, q.getText()));
+            summary.append(String.format("Submitted Option: [%d] %s\n", submittedIndex, q.getOptions().get(submittedIndex)));
+            summary.append("Result: ").append(isCorrect ? "✅ Correct" : "❌ Incorrect").append("\n\n");
+        }
+
+        // Optionally store submission for later result retrieval (optional future enhancement)
+        return summary.toString().trim();
+    }
+
     public boolean deleteQuiz(int id) {
         return quizzes.removeIf(q -> q.getId() == id);
     }
