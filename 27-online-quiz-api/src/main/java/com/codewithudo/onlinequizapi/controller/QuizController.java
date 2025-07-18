@@ -2,6 +2,7 @@ package com.codewithudo.onlinequizapi.controller;
 
 import com.codewithudo.onlinequizapi.model.*;
 import com.codewithudo.onlinequizapi.service.QuizService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -39,6 +40,11 @@ public class QuizController {
         return quizService.submitAnswers(id, submission)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.badRequest().build());
+    }
+
+    @GetMapping("{id}/resultAnalysis")
+    public ResponseEntity<String> getResultAnalysis(@PathVariable int id, @RequestBody AnswerSubmission submission) {
+        return new ResponseEntity<>(quizService.getResultAnalysis(id, submission),  HttpStatus.OK) ;
     }
 
     @DeleteMapping("/{id}")
