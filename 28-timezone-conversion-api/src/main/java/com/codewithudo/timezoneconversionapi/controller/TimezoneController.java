@@ -4,6 +4,8 @@ import com.codewithudo.timezoneconversionapi.model.TimezoneRequest;
 import com.codewithudo.timezoneconversionapi.model.TimezoneResponse;
 import com.codewithudo.timezoneconversionapi.service.TimezoneService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -18,7 +20,7 @@ public class TimezoneController {
     }
 
     @PostMapping("/convert")
-    public TimezoneResponse convertTimezone(@RequestBody TimezoneRequest request) {
-        return timezoneService.convertTimezone(request);
+    public ResponseEntity<TimezoneResponse>  convertTimezone(@RequestBody TimezoneRequest request) {
+        return new ResponseEntity<>(timezoneService.convertTimezone(request),  HttpStatus.OK) ;
     }
 }
