@@ -35,7 +35,7 @@ I'll be ticking off each project as I complete them.
 - [X] 24 - [Static FAQ Service](24-static-faq-service)
 - [X] 25 - [Currency Converter API (static rates)](25-currency-converter-api)
 - [X] 26 - [Inventory Management API (local)](26-inventory-management-api)
-- [ ] 27 - Online Quiz API (single-player)
+- [X] 27 - [Online Quiz API (single-player)](27-online-quiz-api)
 - [ ] 28 - Timezone Conversion API
 - [ ] 29 - System Health Check API
 - [ ] 30 - E-Library (basic book lending records)
