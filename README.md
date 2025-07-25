@@ -37,7 +37,7 @@ I'll be ticking off each project as I complete them.
 - [X] 26 - [Inventory Management API (local)](26-inventory-management-api)
 - [X] 27 - [Online Quiz API (single-player)](27-online-quiz-api)
 - [X] 28 - [Timezone Conversion API](28-timezone-conversion-api)
-- [ ] 29 - System Health Check API
+- [X] 29 - [System Health Check API](29-system-health-check-api)
 - [ ] 30 - E-Library (basic book lending records)
 - [ ] 31 - Grocery List API
 - [ ] 32 - Daily Habit Tracker
