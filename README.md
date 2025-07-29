@@ -38,7 +38,7 @@ I'll be ticking off each project as I complete them.
 - [X] 27 - [Online Quiz API (single-player)](27-online-quiz-api)
 - [X] 28 - [Timezone Conversion API](28-timezone-conversion-api)
 - [X] 29 - [System Health Check API](29-system-health-check-api)
-- [ ] 30 - E-Library (basic book lending records)
+- [X] 30 - [E-Library (basic book lending records)](30-e-library-book-lending)
 - [ ] 31 - Grocery List API
 - [ ] 32 - Daily Habit Tracker
 - [ ] 33 - Travel Wishlist API
