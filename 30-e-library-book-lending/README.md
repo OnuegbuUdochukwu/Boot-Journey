@@ -34,13 +34,18 @@ src
 │   ├── java
 │   │   └── com.codewithudo.elibrarybooklending
 │   │       ├── controller
-│   │       │   └── BookController.java
+│   │       │   └── LibraryController.java
 │   │       ├── model
 │   │       │   └── Book.java
+│   │       │   └── BorrowRecord.java
 │   │       ├── repository
 │   │       │   └── BookRepository.java
+│   │       │   └── BorrowRecordRepository.java
+│   │       ├── dto
+│   │       │   └── BorrowRequest.java
+│   │       │   └── ReturnRequest.java
 │   │       └── service
-│   │           └── BookService.java
+│   │           └── LibraryService.java
 │   └── resources
 │       └── application.properties
 └──test
